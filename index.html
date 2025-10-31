@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gates Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-left">
+            <h2>Filters</h2>
+            <div class="filters">
+                <strong>CS Category:</strong>
+                <button class="filter-btn" data-filter-type="cs_categories" data-filter-value="Machine Learning">Machine Learning</button>
+                <button class="filter-btn" data-filter-type="cs_categories" data-filter-value="Algorithms">Algorithms</button>
+                <button class="filter-btn" data-filter-type="cs_categories" data-filter-value="Artificial Intelligence">Artificial Intelligence</button>
+                <button class="filter-btn" data-filter-type="cs_categories" data-filter-value="Computer Graphic">Computer Graphic</button>
+                
+                <strong>Calculus Level:</strong>
+                <button class="filter-btn" data-filter-type="calc_level" data-filter-value="Calculus I">Calculus I</button>
+                <button class="filter-btn" data-filter-type="calc_level" data-filter-value="Calculus II">Calculus II</button>
+                
+                <strong>View:</strong>
+                <button class="filter-btn active" data-filter-type="all" data-filter-value="all">Show All</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Gates Visualization</h1>
+            <div class="chart-container">
+                <svg id="chart"></svg>
+            </div>
+        </div>
+        
+        <div class="sidebar-right">
+            
+            <div id="instructions">
+                <h3>How to Use This Chart</h3>
+                <p>Welcome to the interactive Calculus prerequisite chart for Computer Science.</p>
+                
+                <strong>1. Explore Topics</strong>
+                <p>Hover over any node (circle) on the graph to see the full name of the Calculus topic.</p>
+                
+                <strong>2. View Details & Connections</strong>
+                <p><strong>Click on a node</strong> to:</p>
+                <ul>
+                    <li>See its details and CS rationales appear in this panel.</li>
+                    <li>Highlight the node and its direct prerequisite and follow-up topics. All other topics will fade.</li>
+                </ul>
+
+                <strong>3. Filter the Graph</strong>
+                <p>Use the filter buttons on the left sidebar to narrow the graph by CS field (e.g., "Machine Learning") or by Calculus level.</p>
+                
+                <strong>4. Reset View</strong>
+                <p><strong>Click on the white background</strong> of the chart at any time to clear the selection, hide details, and reset the graph.</p>
+            </div>
+
+            <div id="rationale-display" class="hidden">
+                <h3>Details</h3>
+                <h4 id="rationale-title"></h4>
+                <p id="rationale-level"></p>
+                <div id="rationale-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" style="opacity:0;"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

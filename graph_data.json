@@ -1,0 +1,554 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "label": "Motivating the need for calculus & limits",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Working with data", "rationale": "Isaac Newton's development of core calculus ideas was in part inspired by his wish to understand laws of physics, as in Philosophiæ Naturalis Principia Mathematica. These laws were designed to be consistent with data. Gauss's work on predicting celestial mechanics from data is grounded in calculus. Some of the earliest roots of calculus are grounded in data analysis. " },
+          { "cs_topic": "Gradient descent", "rationale": "Computing derivatives is essential for gradient descent." },
+          { "cs_topic": "Regression", "rationale": "Regression often tries to minimize the function that represents the sum of squared errors. Finding the minima of a function involves computing derivatives." },
+          { "cs_topic": "Clustering", "rationale": "In k-means, for instance, the key step is finding the mean of a collection of points, which corresponds to finding the point which minimizes the sum of squared differences." },
+          { "cs_topic": "Neural networks", "rationale": "Backpropagation, which is used to train neural networks, is built on calculus." },
+          { "cs_topic": "Advanced Deep Learning", "rationale": "Advanced Deep Learning requires at least as much knowledge as Neural Networks." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule, for example, is used for comparing the growth rates of functions, which is relevant for Big-O notation. The definition of Big-O notation relies on limits." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Computing derivatives is essential for gradient descent." },
+          { "cs_topic": "Regression", "rationale": "Regression often tries to minimize the function that represents the sum of squared errors. Finding the minima of a function involves computing derivatives." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Images (§1)", "rationale": "A digital image is a discrete 2D function. Calculus helps to think about the continuous function." }
+        ]
+      }
+    },
+    {
+      "id": "B",
+      "label": "Introducing the limit concept",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule, for example, is used for comparing the growth rates of functions, which is relevant for Big-O notation. The definition of Big-O notation relies on limits." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "A limit is used to define the tangent of a curve. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "C",
+      "label": "Determining limits of functions graphically and numerically",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule, for example, is used for comparing the growth rates of functions, which is relevant for Big-O notation. The definition of Big-O notation relies on limits." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "A limit is used to define the tangent of a curve. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "H",
+      "label": "Motivating the need for the derivative and introducing the derivative concept",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule, for example, is used for comparing the growth rates of functions, which is relevant for Big-O notation. The definition of Big-O notation relies on limits." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "The tangent of a curve is defined as a derivative. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "D",
+      "label": "Determining the limits of functions with limit laws",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule, for example, is used for comparing the growth rates of functions, which is relevant for Big-O notation. The definition of Big-O notation relies on limits." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "A limit is used to define the tangent of a curve. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "E",
+      "label": "Limits at infinity and infinite limits",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Overfitting/underfitting", "rationale": "Analyzing the limit of a sequence might come up when graphing a loss function in terms of a hyperparameter." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule, for example, is used for comparing the growth rates of functions, which is relevant for Big-O notation. The definition of Big-O notation relies on limits." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Robotics", "rationale": "Analyzing the limit of a sequence might come up when reasoning about a sequence of states." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "A limit is used to define the tangent of a curve. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "F",
+      "label": "Epsilon-delta definition of the limit",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Algorithms"],
+      "rationales": {
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "The epsilon-delta definition of the limit is an important pre-cursor to formal definitions that appear in algorithm analysis, e.g., the definition of Big-O." }
+        ]
+      }
+    },
+    {
+      "id": "G",
+      "label": "Continuity, discontinuities, and the intermediate value theorem",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Working with data", "rationale": "The intermediate value theorem is a fundamental theorem of calculus. Reasoning about continuity is relevant for choosing what type of regression model to use (e.g., linear regression, polynomial regression, etc.)." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "The intermediate value theorem can be used to show the existence of a solution, which an algorithm can then find. Bisection method is an example." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "Continuity is an important property of curves. (page 580)" }
+        ]
+      }
+    },
+    {
+      "id": "J",
+      "label": "Basic differentiation rules",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "Computing derivatives is essential for gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Derivative rules are useful for finding the maxima or minima of a function, which can be relevant for analyzing the best/worst-case complexity of an algorithm." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Computing derivatives is essential for gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Signal Processing Concepts (§9)  [§9.1, §9.2, §9.3, §9.4]", "rationale": "The derivative of a sinc function is computed. (page 195)" }
+        ]
+      }
+    },
+    {
+      "id": "BB",
+      "label": "Sequences",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Working with data", "rationale": "Many loss functions are defined as sums. Gradient descent is an iterative process that generates a sequence of approximations." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Recurrence relations, which are used to analyze the complexity of recursive algorithms, define sequences. Analyzing the convergence of sequences is important." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Robotics", "rationale": "Analyzing the limit of a sequence might come up when reasoning about a sequence of states." }
+        ]
+      }
+    },
+    {
+      "id": "I",
+      "label": "Defining the derivative as a function",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Derivative rules are useful for finding the maxima or minima of a function, which can be relevant for analyzing the best/worst-case complexity of an algorithm." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The definition of the derivative is given in terms of limits. Derivatives are essential for gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "The tangent of a curve is defined as a derivative. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "N",
+      "label": "Applications of derivatives: rates of change and exponential models",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The derivative is the rate of change. Gradient descent is all about finding the direction of steepest descent (rate of change)." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Rates of change are fundamental to analyzing how algorithm performance scales with input size." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The derivative is the rate of change. Gradient descent is all about finding the direction of steepest descent (rate of change)." }
+        ]
+      }
+    },
+    {
+      "id": "P",
+      "label": "Linear approximation",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "Gradient descent relies on a linear approximation of the function at the current point (using the tangent line/plane)." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Numerical methods", "rationale": "Linear approximation (like in Newton's method) is a core concept for many numerical algorithms." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Gradient descent relies on a linear approximation of the function at the current point (using the tangent line/plane)." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "The tangent of a curve is its linear approximation. (page 578)" }
+        ]
+      }
+    },
+    {
+      "id": "K",
+      "label": "Product and quotient rules",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "Computing derivatives is essential for gradient descent. The product rule is a basic differentiation rule." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Derivative rules are useful for finding the maxima or minima of a function, which can be relevant for analyzing the best/worst-case complexity of an algorithm." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Computing derivatives is essential for gradient descent. The product rule is a basic differentiation rule." }
+        ]
+      }
+    },
+    {
+      "id": "L",
+      "label": "Trigonometric derivatives",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Advanced Deep Learning", "rationale": "Some activation functions or models (e.g., in signal processing based ML) might involve trigonometric functions." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Analysis of algorithms related to geometry, physics simulations, or signal processing might involve trigonometric functions." }
+        ]
+      }
+    },
+    {
+      "id": "M",
+      "label": "Derivatives of logarithmic and exponential functions",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Regression", "rationale": "Logistic regression uses the sigmoid function, which is exponential. Cross-entropy loss involves logarithms. Derivatives are needed for optimization." },
+          { "cs_topic": "Neural networks", "rationale": "Common activation functions like sigmoid and softmax involve exponentials. Loss functions like cross-entropy use logarithms." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Analyzing algorithms with logarithmic (e.g., binary search) or exponential (e.g., brute force) complexity." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Regression", "rationale": "Logistic regression uses the sigmoid function, which is exponential. Cross-entropy loss involves logarithms. Derivatives are needed for optimization." },
+          { "cs_topic": "Neural networks", "rationale": "Common activation functions like sigmoid and softmax involve exponentials. Loss functions like cross-entropy use logarithms." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Color/Light/Materials (§17) [all]", "rationale": "Exponential function used in Phong model. (page 428)" }
+        ]
+      }
+    },
+    {
+      "id": "O",
+      "label": "The chain rule",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Neural networks", "rationale": "Backpropagation is essentially a large, recursive application of the chain rule to compute the gradient of the loss function with respect to each weight in the network." },
+          { "cs_topic": "Advanced Deep Learning", "rationale": "Backpropagation, built on the chain rule, is fundamental to all deep learning models." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Used in optimization problems where functions are composed." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Neural networks", "rationale": "Backpropagation is essentially a large, recursive application of the chain rule to compute the gradient of the loss function with respect to each weight in the network." }
+        ]
+      }
+    },
+    {
+      "id": "S",
+      "label": "L'Hopitals rule",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Algorithms"],
+      "rationales": {
+        "Algorithms": [
+          { "cs_topic": "Big-O notation", "rationale": "L'Hopital's rule is used for comparing the growth rates of functions (by taking the limit of their ratio), which is the core idea of Big-O notation (e.g., comparing n log n vs n^2)." }
+        ]
+      }
+    },
+    {
+      "id": "W",
+      "label": "Newtons method",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "Newton's method is an optimization algorithm (a second-order method) for finding roots or local extrema. It's an alternative/extension to standard gradient descent." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Numerical methods", "rationale": "Newton's method is a classic and powerful numerical algorithm for finding roots of functions." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Newton's method is an optimization algorithm (a second-order method) for finding roots or local extrema. It's an alternative/extension to standard gradient descent." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Ray Tracing (§12) [all]", "rationale": "Newton's method is used to find the intersection of a ray and a surface. (page 307)" }
+        ]
+      }
+    },
+    {
+      "id": "R",
+      "label": "The shape of graphs and concavity",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence", "Computer Graphic"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "Concavity (determined by the second derivative) tells us if a critical point is a minimum, maximum, or saddle point. This is crucial for optimization. Convex functions (always concave up) are ideal for gradient descent as they guarantee a global minimum." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Optimization", "rationale": "Understanding concavity/convexity is fundamental to optimization algorithms, as it determines if a local minimum is also a global one." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Concavity (determined by the second derivative) tells us if a critical point is a minimum, maximum, or saddle point. This is crucial for optimization. Convex functions (always concave up) are ideal for gradient descent as they guarantee a global minimum." }
+        ],
+        "Computer Graphic": [
+          { "cs_topic": "Blending Functions, Bézier/Hermite, Catmull-Rom, Interpolating vs. Approximating, Subdivision (curves and surfaces), Picewise Curves/Splines (§15) [all]", "rationale": "The shape of the curve is important." }
+        ]
+      }
+    },
+    {
+      "id": "Q",
+      "label": "Extreme values",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "The entire goal of training most ML models is an optimization problem: finding the minimum value (an extremum) of a loss function." },
+          { "cs_topic": "Regression", "rationale": "Linear regression, for example, is solved by finding the parameters that minimize the sum of squared errors (an extreme value problem)." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Optimization", "rationale": "Many algorithms are optimization algorithms, which are explicitly designed to find the maximum or minimum value of a function." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "The entire goal of training most AI models is an optimization problem: finding the minimum value (an extremum) of a loss function." },
+          { "cs_topic": "Game theory", "rationale": "Finding optimal strategies in game theory often involves finding the extrema (minimax) of a payoff function." }
+        ]
+      }
+    },
+    {
+      "id": "U",
+      "label": "Implicit differentiation",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Computer Graphic"],
+      "rationales": {
+        "Computer Graphic": [
+          { "cs_topic": "Defining/Storing/Rendering (§22) [all]", "rationale": "The tangent of an implicit curve is computed. (page 582)" }
+        ]
+      }
+    },
+    {
+      "id": "AJ",
+      "label": "Integration with the substitution rule",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Advanced Deep Learning", "rationale": "Substitution rule is a basic integration technique. Certain probabilistic models or advanced optimizations might require solving integrals." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Used in solving integrals that might arise in probabilistic analysis or physics-based simulations." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Probabilistic reasoning", "rationale": "Calculating probabilities from continuous probability density functions (PDFs) requires integration. U-substitution is a fundamental technique." }
+        ]
+      }
+    },
+    {
+      "id": "AL",
+      "label": "Integrals involving inverse trigonometric functions",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Algorithms"],
+      "rationales": {
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "May come up in geometric algorithms or complex probabilistic analyses." }
+        ]
+      }
+    },
+    {
+      "id": "AB",
+      "label": "Hyperbolic functions",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Machine Learning"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Neural networks", "rationale": "The hyperbolic tangent (tanh) is a very common activation function in neural networks." }
+        ]
+      }
+    },
+    {
+      "id": "BJ",
+      "label": "Parametric equations",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Computer Graphic"],
+      "rationales": {
+        "Computer Graphic": [
+          { "cs_topic": "Vectors, Curves/Surfaces (§2) [all]", "rationale": "Parametric curves (pages 39-41)" },
+          { "cs_topic": "Blending Functions, Bézier/Hermite, Catmull-Rom, Interpolating vs. Approximating, Subdivision (curves and surfaces), Picewise Curves/Splines (§15) [all]", "rationale": "Parametric equation of a line segment. (page 377) Bézier curves are parametric. (page 380)" }
+        ]
+      }
+    },
+    {
+      "id": "AM",
+      "label": "Integration by parts",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Advanced Deep Learning", "rationale": "Integration by parts is a basic integration technique. Certain probabilistic models (e.g., expectation-maximization) or advanced optimizations might require solving integrals." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "Used in solving integrals that might arise in probabilistic analysis or physics-based simulations." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Probabilistic reasoning", "rationale": "A core technique for solving integrals, which is necessary for working with continuous probability distributions (e.g., finding expected values)." }
+        ]
+      }
+    },
+    {
+      "id": "T",
+      "label": "Antiderivatives",
+      "calc_level": "Calculus I",
+      "cs_categories": ["Machine Learning", "Algorithms"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Advanced Deep Learning", "rationale": "Antiderivatives are the basis of integration, which is used in probabilistic ML (e.g., calculating probabilities from a PDF)." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Algorithm design and analysis", "rationale": "The concept of an antiderivative is fundamental to integration, which can be used in probabilistic analysis of algorithms." }
+        ]
+      }
+    },
+    {
+      "id": "BH",
+      "label": "Taylor series",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Machine Learning", "Algorithms", "Artificial Intelligence"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Gradient descent", "rationale": "Taylor series are used to approximate functions. Gradient descent is based on a first-order Taylor approximation (linear approx). Newton's method uses a second-order (quadratic) approximation." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Numerical methods", "rationale": "Taylor series are the foundation for many numerical approximation algorithms (e.g., approximating sin(x) or e^x) and for understanding the error of those approximations." }
+        ],
+        "Artificial Intelligence": [
+          { "cs_topic": "Gradient descent", "rationale": "Taylor series provide the theoretical foundation for optimization methods, explaining *why* gradient descent (1st order approx) and Newton's method (2nd order approx) work." }
+        ]
+      }
+    },
+    {
+      "id": "BK",
+      "label": "Polar coordinates",
+      "calc_level": "Calculus II",
+      "cs_categories": ["Machine Learning", "Algorithms"],
+      "rationales": {
+        "Machine Learning": [
+          { "cs_topic": "Working with data", "rationale": "Some datasets may be more naturally represented in polar coordinates (e.g., sensor data, directional data)." }
+        ],
+        "Algorithms": [
+          { "cs_topic": "Geometric algorithms", "rationale": "Algorithms dealing with circular or rotational geometry, or pathfinding, may be simplified by using polar coordinates." }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {"source": "A", "target": "B"},
+    {"source": "B", "target": "C"},
+    {"source": "B", "target": "H"},
+    {"source": "C", "target": "D"},
+    {"source": "C", "target": "E"},
+    {"source": "D", "target": "F"},
+    {"source": "D", "target": "G"},
+    {"source": "D", "target": "J"},
+    {"source": "D", "target": "BB"},
+    {"source": "H", "target": "I"},
+    {"source": "I", "target": "J"},
+    {"source": "I", "target": "N"},
+    {"source": "I", "target": "P"},
+    {"source": "J", "target": "K"},
+    {"source": "J", "target": "L"},
+    {"source": "J", "target": "M"},
+    {"source": "J", "target": "O"},
+    {"source": "J", "target": "S"},
+    {"source": "J", "target": "W"},
+    {"source": "O", "target": "R"},
+    {"source": "O", "target": "Q"},
+    {"source": "O", "target": "U"},
+    {"source": "O", "target": "AJ"},
+    {"source": "O", "target": "AL"},
+    {"source": "O", "target": "AB"},
+    {"source": "O", "target": "BJ"},
+    {"source": "K", "target": "Q"},
+    {"source": "K", "target": "AM"},
+    {"source": "L", "target": "Q"},
+    {"source": "L", "target": "T"},
+    {"source": "L", "target": "BH"},
+    {"source": "L", "target": "BK"},
+    {"source": "M", "target": "Q"},
+    {"source": "M", "target": "T"},
+    {"source": "M", "target": "BH"}
+  ]
+}

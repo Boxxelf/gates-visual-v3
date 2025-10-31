@@ -1,0 +1,232 @@
+/* Basic Setup */
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevent body scroll */
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar-left {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box; /* Include padding in height */
+}
+
+.sidebar-right {
+    width: 350px;
+    flex-shrink: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    min-width: 0; /* Allow main content to shrink */
+}
+
+.chart-container {
+    flex-grow: 1; /* Make chart container fill remaining space */
+    width: 100%;
+    min-height: 0; /* Important for flex-grow to work in a column */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#chart {
+    width: 100%;
+    height: 100%;
+}
+
+/* Filters */
+.filters strong {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.filter-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.filter-btn:hover {
+    background-color: #e9e9e9;
+    border-color: #999;
+}
+
+.filter-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* NEW: Instruction Panel (in right sidebar) */
+#instructions {
+    padding-top: 5px;
+}
+#instructions h3 {
+    margin-top: 0;
+}
+#instructions p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+#instructions strong {
+    display: block;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #000;
+}
+#instructions ul {
+    font-size: 0.9rem;
+    padding-left: 20px;
+    margin-top: -5px;
+}
+#instructions li {
+    margin-bottom: 5px;
+}
+
+
+/* Rationale Display (in right sidebar) */
+#rationale-display {
+    margin-top: 0;
+}
+
+#rationale-display h3 {
+    margin-top: 0;
+}
+#rationale-display h4 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+#rationale-level {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 0;
+}
+
+#rationale-content h5 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #0056b3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+}
+.rationale-item {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+.rationale-item strong {
+    color: #333;
+}
+
+/* Graph Styles */
+.link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    transition: opacity 0.3s ease; /* Added transition */
+}
+
+.node {
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Added transition */
+}
+
+.node-circle {
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: all 0.2s ease;
+}
+.node-circle.calc-i { fill: #377eb8; } /* Blue */
+.node-circle.calc-ii { fill: #4daf4a; } /* Green */
+
+.node-label {
+    font-size: 10px;
+    font-family: sans-serif;
+    pointer-events: none;
+    fill: #333;
+}
+
+/* Highlight/Faded/Selected States */
+.node.selected .node-circle {
+    stroke: #ff4136; /* Red */
+    stroke-width: 3px;
+}
+
+.node.faded, .link.faded {
+    opacity: 0.1; /* This is the "turn gray" effect */
+}
+
+/* Tooltip (Simple one) */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
