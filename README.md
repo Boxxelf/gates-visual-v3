@@ -4,7 +4,7 @@ An interactive visualization showing the relationships between Calculus topics a
 
 ## Live Demo
 
-**[View the Interactive Chart](https://boxxelf.github.io/gates-visual-v3/)**
+https://boxxelf.github.io/gates-visual-v3/
 
 ## Features
 
